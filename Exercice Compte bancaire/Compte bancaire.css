@@ -1,0 +1,31 @@
+td button {
+        width:100%;
+    }
+
+table {
+    width: 25%;
+    position: absolute;
+    right: 710px;
+    bottom: 250px;
+    background-color: black;
+}
+
+textarea {
+    width: 350px;
+    height: 180px;
+    background-color: black;
+    color: rgb(255, 251, 9);
+    padding: 25px 25px;
+    position: absolute;
+    right: 750px;
+    bottom: 425px;
+    
+}
+
+img {
+    width: 900px;
+    height: 975px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

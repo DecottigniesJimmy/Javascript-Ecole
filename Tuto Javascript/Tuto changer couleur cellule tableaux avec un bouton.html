@@ -1,0 +1,28 @@
+<script language="javascript">
+    function ChangeColor(ident, backgrd, texte) {
+    document.getElementById(ident).style.backgroundColor = backgrd;
+    document.getElementById(ident).style.color = texte;
+    }
+    </script>
+    <table border="1">
+    <tr>
+    <td id="td1">
+    Case 1
+    </td>
+    <td id="td2">
+    Case 2
+    </td>
+    </tr>
+    <tr>
+    <td id="td3">
+    Case 3
+    </td>
+    <td>
+    &nbsp;
+    </td>
+    </tr>
+    </table>
+    <input type="button" value="Case 1 en Rouge (fond) et Blanc (texte)" onclick="ChangeColor('td1', 'red', 'white')">
+    <input type="button" value="Case 2 en Bleu (fond) et Rouge (texte)" onclick="ChangeColor('td2', 'blue', 'red')">
+    <input type="button" value="Case 3 en Vert (fond) et Orange (texte)" onclick="ChangeColor('td3', 'green', 'orange')">
+    
