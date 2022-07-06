@@ -13,31 +13,6 @@ let stockjus = 2;
 
 // Fonctions :
 
-// TIMER de 5sec--------------------------------------------------
-function decompte()
-{
-    var cpt = 5;
- 
-    timer = setInterval(function(){
-        if(cpt>0)
-        {
-            --cpt; // décrémente le compteur
-            document.getElementById("textarea").innerHTML = "Veuillez patienter votre boisson est en cours de préparation. . ." + cpt + "sec";
-        }
-        else
-        {
-            document.getElementById("textarea").innerHTML = "Votre boisson est prete bonne degustation !" +
-            "Vos crédits : " +
-            credit +
-            " €";
-            clearInterval(timer);
-        }
-    }, 1000);
-}
-//------------------------------------------------------------------
- 
-
-
 function afficheron()
 {
     let menuon= "Bonjour veuillez inserer votre monnaie : "
