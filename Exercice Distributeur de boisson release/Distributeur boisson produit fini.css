@@ -22,7 +22,7 @@ color: rgb(255, 251, 9);
 padding: 25px 25px;
 position: absolute;
 right: 845px;
-bottom: 600px;
+bottom: 550px;
 text-align: center;
 }
 
@@ -69,4 +69,10 @@ Button:hover {
     position: relative;
     bottom: 1380px;
     left: 830px;
+  }
+
+  #cafegif {
+    position: absolute;
+    right: 1000px;
+    bottom: 650px;
   }
