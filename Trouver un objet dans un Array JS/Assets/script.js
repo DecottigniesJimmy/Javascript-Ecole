@@ -5,8 +5,6 @@ function returnText() {
   let filteredNames = myData.filter(e => Object.values(e).map(e => String(e)).some(e => e.includes(input)));
   console.log(filteredNames);
   document.getElementById("test").innerHTML = filteredNames;
-
 };
-
 
 
