@@ -17,10 +17,27 @@ couplets[i].removeChild(couplets[i].firstChild);
 couplets[i].removeChild(couplets[i].firstElementChild);
 
 };
-
+// EXO 1 PART 3-------------------------------------------
+const refrain = document.getElementsByClassName("couplet refrain");
+for(let x = 0; x < refrain.length; x++){
+    const refrainChildren = refrain[x].childNodes;
+    const refrainNumberChildren = Math.round(refrainChildren.length / 2);
+    
+    for(let y = 0; y < refrainNumberChildren; y += 2){
+    // let child = refrainChildren[i];
+    
+    for(let i = 0; i < 2; i++){
+    refrain[x].removeChild(refrainChildren[y]);
+    }
+    }
+    }
+// -------------------------------------------------------
+// EXO 1 PART 4 ------------------------------------------------
 const element = document.getElementById("erreur");
 element.remove();
+// -------------------------------------------------------------
 
+// EXO 1 PART 5 ------------------------------------------------------
 // ajouter un footer et un para dans le footer
 function addfooter() {
 let x = document.createElement("FOOTER"); // crée une balise footer 
@@ -35,6 +52,7 @@ document.querySelector("#myFooter").appendChild(y); // lié le P dans le footer
 }
 
 addfooter(); // Appeler la fonction addfooter
+// --------------------------------------------------------------------------
 
 // VERSION JQUERY FUNCTION ADDFOOTER : $("body").append('<footer> <p>© Copyright 2020 - Nom</p></footer>');
 
