@@ -19,3 +19,4 @@ function recive(){
 
 
     console.log(`Le carré de ${number} est ${number*number}`);
+}
