@@ -13,7 +13,17 @@ function result() {
     let nom = document.getElementById("nom").value;
     let prenom = document.getElementById("prenom").value;   
     document.getElementById("test").innerHTML = `Bonjour je m'apelle ${nom} ${prenom} nous somme le ${dateheure}`
+    setInterval(result, 1000);
 }
-setInterval(result, 1000);
 
+// Debut Axe X Y
+const mouseEvent = document.querySelector(".mouseEvent");
+const horizontal = document.querySelector(".horizontal");
+const vertical = document.querySelector(".vertical");
+
+mouseEvent.addEventListener("mousemove", (e) => {
+    horizontal.innerHTML = e.x;
+    vertical.innerHTML = e.y;
+
+})  
 // EXERCICE DU 25/07/2022 09:33
