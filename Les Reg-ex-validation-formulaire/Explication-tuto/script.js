@@ -20,17 +20,19 @@ r = /Pierre/i;
 //Option : g qui permet de trouver le ou les charactères de manière global dans le document, exemples :
 r = /Pierre/g;
 
+//Option : m multi ligne 
+r = /Pierre/gm
+
 // pour combiner les 2 options
 r = /Pierre/ig;
 
 // Les methodes : 
 
 // Method Match() de l'objet string 
-//permet de chercher des caractères dans une sequence de caractères (a savoir que il trouvera que la 1ere occurence il faut ajouter l'option /g)
+//permet de chercher des caractères dans une sequence de caractères (a savoir que il trouvera que la 1ere occurence il faut ajouter l'option /g pour chercher dans la globalité)
 
 // Method Search() de l'objet string
 // retourner la position de la 1ere occurence trouver dans une chaine de caractère ou le chiffre -1 si elle n'a pas était retrouvé
-
 
 // Method Replace() de l'objet string
 // rechercher une expression et la remplacer par une autre
@@ -41,5 +43,5 @@ r = /Pierre/ig;
 // Method exec() de l'objet regexp
 // permet de rechercher une séquence de caractères dans une chaine de caractère renvoie le text trouver ou null si il ne trouve pas.
 
-
+// https://regex101.com/ PERMET DE TESTER CES REG EX ET VOIR TOUTE LES OPTIONS DISPONIBLES
 
