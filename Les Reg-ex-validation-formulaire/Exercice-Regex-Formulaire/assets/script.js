@@ -1,5 +1,5 @@
 
-let element = document.getElementById("submit");
+let element = document.getElementById("submit"); // on déclare une variable pour l'ensemble de la sécurisation d'un formulaire contenant le bouton submit
 // Debut Email
 element.addEventListener("click", function validateEmail() {
 
@@ -86,9 +86,9 @@ element.addEventListener("click", function validatedate() {
 //   FIN DATE DE NAISSANCE
 
 // DEBUT PASSWORD
-let password = document.getElementById("password").value;
 element.addEventListener("click", function CheckPassword()
 { 
+let password = document.getElementById("password").value;
 var passw=  /^[A-Za-z]\w{7,14}$/;
 if(password.match(passw)) 
 { 
@@ -101,4 +101,4 @@ alert('Wrong...!')
 return false;
 }
 });
-
+// Fin Password
