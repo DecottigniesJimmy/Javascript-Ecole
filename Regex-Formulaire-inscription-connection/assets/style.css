@@ -1,0 +1,68 @@
+* {
+    border-radius:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#email {
+    width:50vw;
+    font-size: 20px;
+}
+
+#emaillab {
+    width:50vw;
+    font-size: 20px;
+}
+
+.mail-vert {
+    background-color: green;
+}
+
+#ddn {
+    width:50vw;
+    font-size: 20px;
+}
+
+#ddnlab {
+    width:50vw;
+    font-size: 20px;
+}
+
+#mdp {
+    width:50vw;
+    font-size: 20px;
+}
+
+#mdplab {
+    width:50vw;
+    font-size: 20px;
+}
+
+#connection {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form {
+    text-align:left;
+}
+
+body {
+    position:relative;
+}
+.container01 {
+    width:40%;
+    text-align: right;
+    position:absolute;
+    left:45%;
+    top:30vh;
+    transform: translateX(-50%);
+}
+
+.test-success {
+    color:green;
+    font-size: 12px;
+}
+
+.test-danger {
+    color:red;
+}
