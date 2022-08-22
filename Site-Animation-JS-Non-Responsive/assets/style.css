@@ -1,0 +1,333 @@
+body {
+    width: 100%;    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('img/plante.jpeg') center; /* Ajout de l'image en background */
+    background-repeat: no-repeat; /* Pour ne pas repeter l'image  */
+    background-size: cover; /* pour que l'image couvre entierement la page */
+    background-attachment:fixed; /* Pour que le fond de page devienne fixe (important)*/
+    overflow: hidden; /* Pour que rien ne dépasse de la page au début (supprime le déroulant a droite)*/
+}
+
+
+.container1 {
+    width: 100%; /* Largeur 100% de la page */
+}
+
+#box1 {
+    width: 100%;
+    height: 1297px;
+}
+
+/* DEBUT TITLE  */
+.container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 20%;
+
+}
+
+.title1 {
+    font-size: 110px; /* Taille du texte*/
+    color: #f1f1f1; /* Couleur du texte */
+    font-weight: 100; /* Grossissement du texte */
+
+}
+
+.title2 {
+    font-weight: 600; /* Grossissement du title contraste entre les 2 mots*/
+}
+
+/* FIN TITLE */
+
+/* DEBUT BOUTON */
+.container-btns {
+    /* permet de bien positionner les boutons par rapport au titre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 20%;
+
+}
+
+.btn-1 {
+    border: 2px solid #f1f1f1;
+    /* ajouter border au bouton */
+    background: transparent;
+    /* Fond transparent*/
+    font-size: 30px;
+    /* Taille ecriture dans le bouton */
+    padding: 20px;
+    /* Rapport hauteur du bouton */
+    width: 300px;
+    /* Longueur du bouton */
+    color: #f1f1f1;
+    /* Couleur texte a l'intérieur du bouton */
+    cursor: pointer;
+    /* Effet de curseur sur le bouton */
+}
+
+.btn-1:nth-child(1) {
+    /* nth-child(1) Cela permet de selectionner le 1er bouton de la meme classe (très utile)*/
+    margin-right: 30px;
+}
+
+.btn-1:hover {
+    /* Quand on passe la souris sur les boutons */
+    transition: all 0.3s ease-in-out;
+    /* Ajoute un effet d'animation lent quand on passe la souris sur le bouton */
+    background: #f1f1f1;
+    /* change la couleur du bouton en blanc cassé */
+    color: #333
+        /* couleur du text gris cendrée */
+}
+
+/* FIN BOUTON */
+
+/* DEBUT LIGNE BLANCHE */
+
+.l1 {
+    width: 175px;
+    /* Largeur de la ligne 1 */
+    height: 3px;
+    /* hauteur de la ligne 2 */
+    border: solid;
+    /* crée une bordure pour la ligne */
+    border-radius: 5px;
+    /* Arrondir les bords des lignes */
+    color: #f1f1f1;
+    /* Couleur lignes */
+}
+
+.l2 {
+    width: 325px;
+    height: 3px;
+    border: solid;
+    border-radius: 5px;
+    color: #f1f1f1;
+    margin-top: 30px;
+    /* permet l'espacement vertical entre les 2 lignes */
+}
+
+.lignes {
+    position: relative;
+    top: 800px;
+    right: 200px;
+    transform: scaleX(-1);
+}
+
+/*  FIN LIGNE BLANCHE */
+
+/* DEBUT MEDIAS */
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.medias {
+    list-style-type: none; /* Permet d'enlever les puces des LI */
+    position: absolute;
+    right: 3.3%;        /* Position absolue a partir de la droite */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+/* FIN MEDIAS */
+
+/*  DEBUT GOUTTE D'EAU */
+.fa-droplet {
+    color: rgb(160, 160, 160); /* couleur de la goutte */
+    position: absolute;            /* Position absolute pour quel puisse arriver sur toute la page sur l'horizontal */
+    top: -20px; /* les gouttes apparaitront en dehors de la page en haut */
+    animation: fall linear forwards; /* Ajoute l'anomation tomber / de manière linear / en forward pour que ca reste (??) */
+}
+
+@keyframes fall {      /* keyframes de l'animation */
+    to {
+        transform: translateY(160vh);       /* permet de faire tomber les gouttes jusqu'en dehors de l'écran */
+    }
+
+}
+/* FIN GOUTTE D'EAU */
+
+
+/* MEDIA QUERIES //////////////// */
+
+
+
+
+@media only screen and (min-width:240px) and (max-width: 410px) {
+    .container-title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 15%;
+        left:50%;
+        transform: translateX(-50%); 
+    }
+    
+    .title1 {
+        font-size: 60px; /* Taille du texte*/
+    }
+
+    .container-btns {
+        /* permet de bien positionner les boutons par rapport au titre */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+        left: 0%;
+        transform: translateY(-50%);
+        transform: scale(0.6);   
+    }
+
+    .medias {
+        list-style-type: none; /* Permet d'enlever les puces des LI */
+        position: relative;
+        top: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lignes {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:410px) and (max-width: 600px) {
+    .container-title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 15%;
+        left:50%;
+        transform: translateX(-50%); 
+    }
+    
+    .title1 {
+        font-size: 90px; /* Taille du texte*/
+    }
+
+    .container-btns {
+        /* permet de bien positionner les boutons par rapport au titre */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 30%;
+        left: 0%;
+        transform: translateY(-50%);
+        transform: scale(0.9);  
+    }
+
+    .medias {
+        list-style-type: none; /* Permet d'enlever les puces des LI */
+        position: relative;
+        top: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .bulle {
+        margin: 0 auto
+    }
+
+    .lignes {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 1244px) {
+    .container-title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 15%;
+        left:50%;
+        transform: translateX(-50%); 
+    }
+    
+    .title1 {
+        font-size: 100px; /* Taille du texte*/
+    }
+
+    .container-btns {
+        /* permet de bien positionner les boutons par rapport au titre */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 30%;
+        left: 0%;
+        transform: translateY(-50%);
+        transform: scale(0.9);   
+    }
+
+    .medias {
+        list-style-type: none; /* Permet d'enlever les puces des LI */
+        position: relative;
+        top: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .lignes {
+        display: none;
+    }
+
+    .bulle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        cursor: pointer;
+        margin: 0 auto
+    }
+
+    .logo-medias {
+        width: 70px;
+        height: 70px;
+    }
+}
